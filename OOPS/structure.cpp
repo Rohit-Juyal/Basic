@@ -19,3 +19,8 @@ int main ()
     d.y = 9;
     d.display();
 }
+
+
+// Difference between class and structure
+
+// In structure by default everything is public whereas in a class by default everything is private.
