@@ -21,12 +21,26 @@ public:
     ~Rectangle();
 };
 
+class Cuboid:public Rectangle
+{
+private:
+    int height;
+public:
+    Cuboid(int h)
+    {
+        height = h;
+    }
+    int getHeight(){return height;}
+    void setHeight(int h){height = h;}
+    int volume(){return getLength() * getBreadth() * height;}
+};
+
 int main()
 {
-    Rectangle r1(10,10);
-    cout << "Area " << r1.area() << endl;
-    if(r1.isSquare())
-    cout << "It's a square" << endl;
+   Cuboid c(5);
+   c.setLength(10);
+   c.setBreadth(15);
+   cout<< "Volume is " << c.volume(); 
 }
 
 Rectangle::Rectangle()
@@ -66,5 +80,5 @@ bool Rectangle::isSquare()
 }
 Rectangle::~Rectangle()
 {
-    cout << "Rectangle destroyed";
+    // cout << "Rectangle destroyed";
 }
