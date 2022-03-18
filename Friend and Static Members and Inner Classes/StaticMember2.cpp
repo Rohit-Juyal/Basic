@@ -18,7 +18,6 @@ int main()
     cout << i1.price << endl;
     cout << i2.price << endl;
     cout << i3.price << endl;
-    i1.getprice();
 
     cout << Innova::price<< endl;
 }

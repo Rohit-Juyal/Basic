@@ -16,8 +16,8 @@ public:
 void fun()
 {
     Test t;
-    t.a = 10;
-    t.b = 5;
+    t.a = 10;          // a is private
+    t.b = 5;           // b is protected
     t.c = 15;
 }
 

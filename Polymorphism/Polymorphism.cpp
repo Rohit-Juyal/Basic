@@ -44,3 +44,10 @@ int main()
     c = new Swift();
     c->start();
 }
+
+
+
+// So your virtual function must be overrided by derived classes.
+// And the purpose of pure virtual function is to achieve polymorphism.
+// You cannot create the object of car class 
+// that car class has to give nothing.Just the declaration of the function where the derived classes must implement those functions.
